@@ -1,0 +1,54 @@
+body {
+    background-color: #a6f174;
+    color: #112213;
+    font-family: 'Consolas', Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+button {
+    background-color: rgba(43, 9, 231, 0.842);
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+p {
+    font: 1em sans-serif;
+    color: rgb(230, 20, 30);
+}
+
+
+form {
+    display: flex;
+    background-color: #FAFAFA;
+    border-top: 1px solid rgba(0,0,0,.1);
+    padding: 10px;
+}
+
+form input {
+    flex: 1;
+    outline: none;
+    transition: all .2s;
+}
+  footer {
+    align-items: center;
+    font-weight: bold;
+    border: 1px dashed #333;
+    height: 50px;
+    width: 500px;
+    margin-left: 300px;
+    margin-top: 10px;
+ }
+ #mylocation {
+     
+    margin: 4em 0; 
+}
+#map {
+    align-items: center;
+    margin-left: 50px;
+    height: 300px;
+    width: 1000px;
+}
+

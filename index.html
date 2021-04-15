@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Assignment 2 Liudmyla Romanenko</title>
+    
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKuC-kCF3yiWtXWBtDmW2RubC3MaqwUEs&callback=initMap"
+    type="text/javascript"></script>
+<script src="thirdpartyapi.js" defer></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Galada&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            
+            <h1>Create My Weekly Goals</h1>
+            <section>
+                <label>What Is My Goals For This week?: </label>
+                <input type="text" placeholder="Type some goal..." id="myInput">
+                <button id="add"> Add New Goal </button>
+            </section>
+        </header>
+        <main>
+            <section>
+                <h2>List of My Weekly Goals</h2>
+            </section>
+            <h3>My Completed Goals</h3>
+            <p id="p1" draggable="true" ondragstart="dragstart_handler(event)">Hmm! I still have to do something!</p>
+        </main>
+        <script src="main.js" defer></script>
+        <section class="row">
+			<h2>My favorite shopping centre ♥ ♥ ♥ !</h2>
+<!--<button id="mylocation">See the all place</button>-->
+			<p id="location"></p>
+			<div id="map"></div>
+		</section>
+</body>
+<footer>
+    <div id="target" ondrop="drop_handler(event)" ondragover="dragover_handler(event)">Trash</div>
+</footer>
+</html>
